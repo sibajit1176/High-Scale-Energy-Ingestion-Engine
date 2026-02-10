@@ -147,16 +147,24 @@ Example:
 
 ```
 src/
- ├── modules/
- │    ├── telemetry/
- │    │    ├── controller
- │    │    ├── service
- │    │    ├── dto
- │    │    ├── entity
+ ├── ingest/
+ │    ├── ingest.controller.ts
+ │    ├── ingest.service.ts
+ │    ├── ingest.module.ts
+ │    └── dto/
+ │         ├── meter-telemetry.dto.ts
+ │         
  │
- ├── common/
- ├── config/
- ├── main.ts
+ ├── telemetry/
+ │    ├── entities/
+ │    │     ├── meter-history.entity.ts
+ │    │     ├── meter-live.entity.ts
+ │    │     ├── vehicle-history.entity.ts
+ │    │     └── vehicle-live.entity.ts
+ │    └── telemetry.module.ts
+ │
+ └── app.module.ts
+
 ```
 
 ---
@@ -327,10 +335,9 @@ Metrics tracked:
 
 ## 17. GitHub Repository
 
-Add your repo link here:
 
 ```
-https://github.com/your-username/telemetry-api
+https://github.com/sibajit1176/High-Scale-Energy-Ingestion-Engine.git
 ```
 
 ---
